@@ -1,0 +1,461 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Dec  1 18:36:47 2022
+# Process ID: 8540
+# Current directory: C:/Users/mr418/Desktop/ece350project/project.runs/synth_1
+# Command line: vivado.exe -log Wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Wrapper.tcl
+# Log file: C:/Users/mr418/Desktop/ece350project/project.runs/synth_1/Wrapper.vds
+# Journal file: C:/Users/mr418/Desktop/ece350project/project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Wrapper.tcl -notrace
+Command: synth_design -top Wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11956
+WARNING: [Synth 8-6901] identifier 'PWM' is used before its declaration [C:/Users/mr418/Desktop/ece350project/processor/Wrapper.v:33]
+WARNING: [Synth 8-6901] identifier 'PWM2' is used before its declaration [C:/Users/mr418/Desktop/ece350project/processor/Wrapper.v:34]
+WARNING: [Synth 8-6901] identifier 'ledright' is used before its declaration [C:/Users/mr418/Desktop/ece350project/processor/Wrapper.v:36]
+WARNING: [Synth 8-6901] identifier 'ledleft' is used before its declaration [C:/Users/mr418/Desktop/ece350project/processor/Wrapper.v:37]
+WARNING: [Synth 8-6901] identifier 'reg_to_test' is used before its declaration [C:/Users/mr418/Desktop/ece350project/processor/Wrapper_tb.v:63]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module counter [C:/Users/mr418/Desktop/ece350project/servo/counter.v:25]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1329.270 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Wrapper' [C:/Users/mr418/Desktop/ece350project/processor/Wrapper.v:27]
+INFO: [Synth 8-6157] synthesizing module 'Servo_interface' [C:/Users/mr418/Desktop/ece350project/servo/Servo_interface.v:26]
+INFO: [Synth 8-6157] synthesizing module 'comparator' [C:/Users/mr418/Desktop/ece350project/servo/comparator.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'comparator' (1#1) [C:/Users/mr418/Desktop/ece350project/servo/comparator.v:25]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/mr418/Desktop/ece350project/servo/counter.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (2#1) [C:/Users/mr418/Desktop/ece350project/servo/counter.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'Servo_interface' (3#1) [C:/Users/mr418/Desktop/ece350project/servo/Servo_interface.v:26]
+WARNING: [Synth 8-689] width (32) of port connection 'pulse_width' does not match port width (20) of module 'Servo_interface' [C:/Users/mr418/Desktop/ece350project/processor/Wrapper.v:69]
+WARNING: [Synth 8-689] width (32) of port connection 'pulse_width' does not match port width (20) of module 'Servo_interface' [C:/Users/mr418/Desktop/ece350project/processor/Wrapper.v:70]
+INFO: [Synth 8-6157] synthesizing module 'dff32' [C:/Users/mr418/Desktop/ece350project/processor/dff32.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dffe_ref' [C:/Users/mr418/Desktop/ece350project/processor/dffe_ref.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dffe_ref' (4#1) [C:/Users/mr418/Desktop/ece350project/processor/dffe_ref.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dff32' (5#1) [C:/Users/mr418/Desktop/ece350project/processor/dff32.v:1]
+INFO: [Synth 8-6157] synthesizing module 'processor' [C:/Users/mr418/Desktop/ece350project/processor/processor.v:20]
+INFO: [Synth 8-6157] synthesizing module 'PC_latch' [C:/Users/mr418/Desktop/ece350project/processor/PC_latch.v:1]
+INFO: [Synth 8-6157] synthesizing module 'reg_32' [C:/Users/mr418/Desktop/ece350project/processor/reg_32.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'reg_32' (6#1) [C:/Users/mr418/Desktop/ece350project/processor/reg_32.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PC_latch' (7#1) [C:/Users/mr418/Desktop/ece350project/processor/PC_latch.v:1]
+INFO: [Synth 8-6157] synthesizing module 'cla_32' [C:/Users/mr418/Desktop/ece350project/processor/cla_32.v:1]
+INFO: [Synth 8-6157] synthesizing module 'cla_8' [C:/Users/mr418/Desktop/ece350project/processor/cla_8.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'cla_8' (8#1) [C:/Users/mr418/Desktop/ece350project/processor/cla_8.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'cla_32' (9#1) [C:/Users/mr418/Desktop/ece350project/processor/cla_32.v:1]
+INFO: [Synth 8-6157] synthesizing module 'reg_pc' [C:/Users/mr418/Desktop/ece350project/processor/reg_pc.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'reg_pc' (10#1) [C:/Users/mr418/Desktop/ece350project/processor/reg_pc.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FD_latch' [C:/Users/mr418/Desktop/ece350project/processor/FD_latch.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'FD_latch' (11#1) [C:/Users/mr418/Desktop/ece350project/processor/FD_latch.v:1]
+INFO: [Synth 8-6157] synthesizing module 'isa_decoder' [C:/Users/mr418/Desktop/ece350project/processor/isa_decoder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_32_1bit' [C:/Users/mr418/Desktop/ece350project/processor/mux_32_1bit.v:4]
+INFO: [Synth 8-6157] synthesizing module 'mux_8_1bit' [C:/Users/mr418/Desktop/ece350project/processor/mux_8_1bit.v:4]
+INFO: [Synth 8-6157] synthesizing module 'mux_4_1bit' [C:/Users/mr418/Desktop/ece350project/processor/mux_4_1bit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux_2_1bit' [C:/Users/mr418/Desktop/ece350project/processor/mux_2_1bit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_2_1bit' (12#1) [C:/Users/mr418/Desktop/ece350project/processor/mux_2_1bit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_4_1bit' (13#1) [C:/Users/mr418/Desktop/ece350project/processor/mux_4_1bit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mux_8_1bit' (14#1) [C:/Users/mr418/Desktop/ece350project/processor/mux_8_1bit.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'mux_32_1bit' (15#1) [C:/Users/mr418/Desktop/ece350project/processor/mux_32_1bit.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'isa_decoder' (16#1) [C:/Users/mr418/Desktop/ece350project/processor/isa_decoder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'full_comparator' [C:/Users/mr418/Desktop/ece350project/processor/full_comparator.v:1]
+INFO: [Synth 8-6157] synthesizing module 'two_bit_comparator' [C:/Users/mr418/Desktop/ece350project/processor/two_bit_comparator.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'two_bit_comparator' (17#1) [C:/Users/mr418/Desktop/ece350project/processor/two_bit_comparator.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'full_comparator' (18#1) [C:/Users/mr418/Desktop/ece350project/processor/full_comparator.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DX_latch' [C:/Users/mr418/Desktop/ece350project/processor/DX_latch.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'DX_latch' (19#1) [C:/Users/mr418/Desktop/ece350project/processor/DX_latch.v:1]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/mr418/Desktop/ece350project/processor/alu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'not_bit' [C:/Users/mr418/Desktop/ece350project/processor/not_bit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'not_bit' (20#1) [C:/Users/mr418/Desktop/ece350project/processor/not_bit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'and_bit' [C:/Users/mr418/Desktop/ece350project/processor/and_bit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'and_bit' (21#1) [C:/Users/mr418/Desktop/ece350project/processor/and_bit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'or_bit' [C:/Users/mr418/Desktop/ece350project/processor/or_bit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'or_bit' (22#1) [C:/Users/mr418/Desktop/ece350project/processor/or_bit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'lshift' [C:/Users/mr418/Desktop/ece350project/processor/lshift.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_2' [C:/Users/mr418/Desktop/ece350project/processor/mux_2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_2' (23#1) [C:/Users/mr418/Desktop/ece350project/processor/mux_2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'lshift' (24#1) [C:/Users/mr418/Desktop/ece350project/processor/lshift.v:1]
+INFO: [Synth 8-6157] synthesizing module 'rshift' [C:/Users/mr418/Desktop/ece350project/processor/rshift.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'rshift' (25#1) [C:/Users/mr418/Desktop/ece350project/processor/rshift.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_8' [C:/Users/mr418/Desktop/ece350project/processor/mux_8.v:4]
+INFO: [Synth 8-6157] synthesizing module 'mux_4' [C:/Users/mr418/Desktop/ece350project/processor/mux_4.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mux_4' (26#1) [C:/Users/mr418/Desktop/ece350project/processor/mux_4.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mux_8' (27#1) [C:/Users/mr418/Desktop/ece350project/processor/mux_8.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (28#1) [C:/Users/mr418/Desktop/ece350project/processor/alu.v:1]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/mr418/Desktop/ece350project/processor/processor.v:139]
+INFO: [Synth 8-6157] synthesizing module 'DP_latch' [C:/Users/mr418/Desktop/ece350project/processor/DP_latch.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'DP_latch' (29#1) [C:/Users/mr418/Desktop/ece350project/processor/DP_latch.v:1]
+INFO: [Synth 8-6157] synthesizing module 'multdiv' [C:/Users/mr418/Desktop/ece350project/processor/multdiv.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mult' [C:/Users/mr418/Desktop/ece350project/processor/mult.v:1]
+INFO: [Synth 8-6157] synthesizing module 'reg_65' [C:/Users/mr418/Desktop/ece350project/processor/reg_65.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'reg_65' (30#1) [C:/Users/mr418/Desktop/ece350project/processor/reg_65.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mult_control' [C:/Users/mr418/Desktop/ece350project/processor/mult_control.v:1]
+WARNING: [Synth 8-689] width (5) of port connection 'clk' does not match port width (1) of module 'counter' [C:/Users/mr418/Desktop/ece350project/processor/mult_control.v:9]
+WARNING: [Synth 8-689] width (1) of port connection 'count' does not match port width (20) of module 'counter' [C:/Users/mr418/Desktop/ece350project/processor/mult_control.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'mult_control' (31#1) [C:/Users/mr418/Desktop/ece350project/processor/mult_control.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mult_overflow' [C:/Users/mr418/Desktop/ece350project/processor/mult_overflow.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mult_overflow' (32#1) [C:/Users/mr418/Desktop/ece350project/processor/mult_overflow.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mult' (33#1) [C:/Users/mr418/Desktop/ece350project/processor/mult.v:1]
+INFO: [Synth 8-6157] synthesizing module 'div' [C:/Users/mr418/Desktop/ece350project/processor/div.v:1]
+INFO: [Synth 8-6157] synthesizing module 'div_control' [C:/Users/mr418/Desktop/ece350project/processor/div_control.v:1]
+INFO: [Synth 8-6157] synthesizing module 'counter_5' [C:/Users/mr418/Desktop/ece350project/processor/counter_5.v:1]
+INFO: [Synth 8-6157] synthesizing module 'tff' [C:/Users/mr418/Desktop/ece350project/processor/tff.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'tff' (34#1) [C:/Users/mr418/Desktop/ece350project/processor/tff.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'counter_5' (35#1) [C:/Users/mr418/Desktop/ece350project/processor/counter_5.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'div_control' (36#1) [C:/Users/mr418/Desktop/ece350project/processor/div_control.v:1]
+INFO: [Synth 8-6157] synthesizing module 'reg_32_div' [C:/Users/mr418/Desktop/ece350project/processor/reg_32_div.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'reg_32_div' (37#1) [C:/Users/mr418/Desktop/ece350project/processor/reg_32_div.v:1]
+INFO: [Synth 8-6157] synthesizing module 'reg_64' [C:/Users/mr418/Desktop/ece350project/processor/reg_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'reg_64' (38#1) [C:/Users/mr418/Desktop/ece350project/processor/reg_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'div' (39#1) [C:/Users/mr418/Desktop/ece350project/processor/div.v:1]
+INFO: [Synth 8-6157] synthesizing module 'sr' [C:/Users/mr418/Desktop/ece350project/processor/sr.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'sr' (40#1) [C:/Users/mr418/Desktop/ece350project/processor/sr.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'multdiv' (41#1) [C:/Users/mr418/Desktop/ece350project/processor/multdiv.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PW_latch' [C:/Users/mr418/Desktop/ece350project/processor/PW_latch.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PW_latch' (42#1) [C:/Users/mr418/Desktop/ece350project/processor/PW_latch.v:1]
+INFO: [Synth 8-6157] synthesizing module 'XM_latch' [C:/Users/mr418/Desktop/ece350project/processor/XM_latch.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'XM_latch' (43#1) [C:/Users/mr418/Desktop/ece350project/processor/XM_latch.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MW_latch' [C:/Users/mr418/Desktop/ece350project/processor/MW_latch.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MW_latch' (44#1) [C:/Users/mr418/Desktop/ece350project/processor/MW_latch.v:1]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/mr418/Desktop/ece350project/processor/processor.v:210]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/mr418/Desktop/ece350project/processor/processor.v:210]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/mr418/Desktop/ece350project/processor/processor.v:211]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/mr418/Desktop/ece350project/processor/processor.v:211]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/mr418/Desktop/ece350project/processor/processor.v:242]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/mr418/Desktop/ece350project/processor/processor.v:242]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/mr418/Desktop/ece350project/processor/processor.v:243]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/mr418/Desktop/ece350project/processor/processor.v:243]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/mr418/Desktop/ece350project/processor/processor.v:244]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/mr418/Desktop/ece350project/processor/processor.v:244]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/mr418/Desktop/ece350project/processor/processor.v:245]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/mr418/Desktop/ece350project/processor/processor.v:245]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/mr418/Desktop/ece350project/processor/processor.v:249]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/mr418/Desktop/ece350project/processor/processor.v:259]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/mr418/Desktop/ece350project/processor/processor.v:259]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/mr418/Desktop/ece350project/processor/processor.v:259]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/mr418/Desktop/ece350project/processor/processor.v:260]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/mr418/Desktop/ece350project/processor/processor.v:260]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/mr418/Desktop/ece350project/processor/processor.v:260]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/mr418/Desktop/ece350project/processor/processor.v:261]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/mr418/Desktop/ece350project/processor/processor.v:261]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/mr418/Desktop/ece350project/processor/processor.v:261]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/mr418/Desktop/ece350project/processor/processor.v:262]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/mr418/Desktop/ece350project/processor/processor.v:262]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/mr418/Desktop/ece350project/processor/processor.v:262]
+INFO: [Synth 8-6155] done synthesizing module 'processor' (45#1) [C:/Users/mr418/Desktop/ece350project/processor/processor.v:20]
+INFO: [Synth 8-6157] synthesizing module 'ROM' [C:/Users/mr418/Desktop/ece350project/processor/ROM.v:2]
+	Parameter MEMFILE bound to: 64'b0111010001100101011100110111010000101110011011010110010101101101 
+INFO: [Synth 8-3876] $readmem data file 'test.mem' is read successfully [C:/Users/mr418/Desktop/ece350project/processor/ROM.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'ROM' (46#1) [C:/Users/mr418/Desktop/ece350project/processor/ROM.v:2]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/mr418/Desktop/ece350project/processor/regfile.v:1]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/mr418/Desktop/ece350project/processor/regfile.v:59]
+INFO: [Synth 8-6157] synthesizing module 'ila_reg' [C:/Users/mr418/Desktop/ece350project/project.runs/synth_1/.Xil/Vivado-8540-P1-05/realtime/ila_reg_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_reg' (47#1) [C:/Users/mr418/Desktop/ece350project/project.runs/synth_1/.Xil/Vivado-8540-P1-05/realtime/ila_reg_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'debuggers'. This will prevent further optimization [C:/Users/mr418/Desktop/ece350project/processor/regfile.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (48#1) [C:/Users/mr418/Desktop/ece350project/processor/regfile.v:1]
+INFO: [Synth 8-6157] synthesizing module 'RAM' [C:/Users/mr418/Desktop/ece350project/processor/RAM.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'RAM' (49#1) [C:/Users/mr418/Desktop/ece350project/processor/RAM.v:2]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/mr418/Desktop/ece350project/processor/Wrapper.v:110]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [C:/Users/mr418/Desktop/ece350project/project.runs/synth_1/.Xil/Vivado-8540-P1-05/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (50#1) [C:/Users/mr418/Desktop/ece350project/project.runs/synth_1/.Xil/Vivado-8540-P1-05/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'debuggers'. This will prevent further optimization [C:/Users/mr418/Desktop/ece350project/processor/Wrapper.v:110]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'RegisterFile'. This will prevent further optimization [C:/Users/mr418/Desktop/ece350project/processor/Wrapper.v:97]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'CPU'. This will prevent further optimization [C:/Users/mr418/Desktop/ece350project/processor/Wrapper.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'Wrapper' (51#1) [C:/Users/mr418/Desktop/ece350project/processor/Wrapper.v:27]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1342.977 ; gain = 13.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1360.852 ; gain = 31.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1360.852 ; gain = 31.582
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.156 . Memory (MB): peak = 1360.852 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/mr418/Desktop/ece350project/project.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'debuggers'
+Finished Parsing XDC File [c:/Users/mr418/Desktop/ece350project/project.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'debuggers'
+Parsing XDC File [c:/Users/mr418/Desktop/ece350project/project.gen/sources_1/ip/ila_reg/ila_reg/ila_reg_in_context.xdc] for cell 'RegisterFile/debuggers'
+Finished Parsing XDC File [c:/Users/mr418/Desktop/ece350project/project.gen/sources_1/ip/ila_reg/ila_reg/ila_reg_in_context.xdc] for cell 'RegisterFile/debuggers'
+Parsing XDC File [C:/Users/mr418/Desktop/ece350project/project.srcs/constrs_1/new/led.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clr'. [C:/Users/mr418/Desktop/ece350project/project.srcs/constrs_1/new/led.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'clr'. [C:/Users/mr418/Desktop/ece350project/project.srcs/constrs_1/new/led.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/mr418/Desktop/ece350project/project.srcs/constrs_1/new/led.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/mr418/Desktop/ece350project/project.srcs/constrs_1/new/led.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'PWM'. [C:/Users/mr418/Desktop/ece350project/project.srcs/constrs_1/new/led.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'PWM'. [C:/Users/mr418/Desktop/ece350project/project.srcs/constrs_1/new/led.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'button'. [C:/Users/mr418/Desktop/ece350project/project.srcs/constrs_1/new/led.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'led1'. [C:/Users/mr418/Desktop/ece350project/project.srcs/constrs_1/new/led.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'button'. [C:/Users/mr418/Desktop/ece350project/project.srcs/constrs_1/new/led.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'led1'. [C:/Users/mr418/Desktop/ece350project/project.srcs/constrs_1/new/led.xdc:21]
+WARNING: [Vivado 12-507] No nets matched 'CPU/dx_latch1/reg_ir/dffe_loop[2].dff/data_writeReg[29]_INST_0_i_5_n_0'. [C:/Users/mr418/Desktop/ece350project/project.srcs/constrs_1/new/led.xdc:23]
+WARNING: [Vivado 12-507] No nets matched 'CPU/dx_latch1/reg_ir/dffe_loop[2].dff/data_writeReg[31]_INST_0_i_6_n_0'. [C:/Users/mr418/Desktop/ece350project/project.srcs/constrs_1/new/led.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'buttonleft'. [C:/Users/mr418/Desktop/ece350project/project.srcs/constrs_1/new/led.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'buttonright'. [C:/Users/mr418/Desktop/ece350project/project.srcs/constrs_1/new/led.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'buttonleft'. [C:/Users/mr418/Desktop/ece350project/project.srcs/constrs_1/new/led.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'buttonright'. [C:/Users/mr418/Desktop/ece350project/project.srcs/constrs_1/new/led.xdc:34]
+Finished Parsing XDC File [C:/Users/mr418/Desktop/ece350project/project.srcs/constrs_1/new/led.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/mr418/Desktop/ece350project/project.srcs/constrs_1/new/led.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/mr418/Desktop/ece350project/project.srcs/constrs_1/new/led.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/mr418/Desktop/ece350project/project.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/mr418/Desktop/ece350project/project.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1478.840 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1478.840 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1478.840 ; gain = 149.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1478.840 ; gain = 149.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for debuggers. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for RegisterFile/debuggers. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1478.840 ; gain = 149.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1478.840 ; gain = 149.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    1 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   3 Input      1 Bit         XORs := 384   
+	   2 Input      1 Bit         XORs := 11    
++---Registers : 
+	               32 Bit    Registers := 1     
+	               30 Bit    Registers := 1     
+	                1 Bit    Registers := 1895  
++---RAMs : 
+	             128K Bit	(4096 X 32 bit)          RAMs := 1     
++---ROMs : 
+	                    ROMs := 1     
++---Muxes : 
+	   2 Input   65 Bit        Muxes := 2     
+	   2 Input   64 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 56    
+	   2 Input    5 Bit        Muxes := 20    
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 764   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1478.840 ; gain = 149.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+---------------------+---------------+----------------+
+|Module Name | RTL Object          | Depth x Width | Implemented As | 
++------------+---------------------+---------------+----------------+
+|Wrapper     | InstMem/dataOut_reg | 4096x30       | Block RAM      | 
++------------+---------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object              | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Wrapper     | ProcMem/MemoryArray_reg | 4 K x 32(NO_CHANGE)    | W | R |                        |   |   | Port A           | 0      | 4      | 
++------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1478.840 ; gain = 149.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1478.840 ; gain = 149.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object              | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Wrapper     | ProcMem/MemoryArray_reg | 4 K x 32(NO_CHANGE)    | W | R |                        |   |   | Port A           | 0      | 4      | 
++------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance ProcMem/MemoryArray_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ProcMem/MemoryArray_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ProcMem/MemoryArray_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ProcMem/MemoryArray_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance InstMem/dataOut_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance InstMem/dataOut_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance InstMem/dataOut_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance InstMem/dataOut_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1517.191 ; gain = 187.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin button_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin button_in_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin button_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin led_inferred:in0 to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1531.941 ; gain = 202.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1531.941 ; gain = 202.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1531.941 ; gain = 202.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1531.941 ; gain = 202.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1531.941 ; gain = 202.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1531.941 ; gain = 202.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ila_reg       |         1|
+|2     |ila_0         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |ila      |     1|
+|2     |ila_reg  |     1|
+|3     |BUFG     |     1|
+|4     |CARRY4   |    16|
+|5     |LUT1     |   147|
+|6     |LUT2     |   546|
+|7     |LUT3     |   205|
+|8     |LUT4     |   471|
+|9     |LUT5     |   549|
+|10    |LUT6     |  1612|
+|11    |MUXF7    |    31|
+|12    |RAMB36E1 |     8|
+|17    |FDCE     |   955|
+|18    |FDRE     |   585|
+|19    |FDSE     |     4|
+|20    |IBUF     |     5|
+|21    |OBUF     |     2|
+|22    |OBUFT    |     2|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1531.941 ; gain = 202.672
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 1531.941 ; gain = 84.684
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1531.941 ; gain = 202.672
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 1544.031 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 55 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 8 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1547.727 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: a10eff54
+INFO: [Common 17-83] Releasing license: Synthesis
+130 Infos, 58 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1547.727 ; gain = 218.457
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mr418/Desktop/ece350project/project.runs/synth_1/Wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Wrapper_utilization_synth.rpt -pb Wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  1 18:37:38 2022...
